@@ -4,7 +4,8 @@ void menu(){
     printf("1 - Enter Text\n");
     printf( "2 - Print Text\n");
     printf( "3 -Text Length\n");
-    printf( "4 -Stop Program\n");
+    printf( "4 -Change To Big Letters\n");
+    printf( "5 -Stop Program\n");
 }
 int main() {
     char text[100] = " ";
@@ -23,10 +24,14 @@ int main() {
                 printtext(text);
                 break;
             case 3:
-                printf("Text length = %d", count(text));
+                printf("Text length = %d\n", count(text));
                 break;
             case 4:
+                bigLetters(text);
+                puts("Change To Big Letters\n");
+                break;
+            case 5:
                 break;
         }
-    }while( choice!=4);
+    }while( choice!=5);
 }
