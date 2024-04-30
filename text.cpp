@@ -32,3 +32,15 @@ void bigLetters(char *ciag)
         ciag++;
     }
 }
+void smallLetters(char *ciag)
+{
+    while (*ciag)
+    {
+        if ('A' <= *ciag && *ciag <= 'Z')
+        {
+            *ciag += ('a' - 'A');
+        }
+        ciag++;
+    }
+}
+

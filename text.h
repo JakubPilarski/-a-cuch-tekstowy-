@@ -9,4 +9,5 @@ void printtext(char *text);
 void clear(void);
 int count(char *text);
 void bigLetters(char *ciag);
+void smallLetters(char *ciag);
 #endif //UNTITLED7_TEXT_H
