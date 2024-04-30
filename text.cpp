@@ -10,3 +10,14 @@ void clear(void)
 {
     while(getchar()!= '\n');
 }
+int count(char *text)
+{
+    int c = 0 ;
+    while(*(text + c))
+{
+        c++;
+}
+    c =  c - 1;
+    return c;
+
+}
