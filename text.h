@@ -7,4 +7,5 @@
 void entertext(char *text);
 void printtext(char *text);
 void clear(void);
+int count(char *text);
 #endif //UNTITLED7_TEXT_H
