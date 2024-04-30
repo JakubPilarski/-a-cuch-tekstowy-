@@ -21,3 +21,14 @@ int count(char *text)
     return c;
 
 }
+void bigLetters(char *ciag)
+{
+    while (*ciag)
+    {
+        if ('a' <= *ciag && *ciag <= 'z')
+        {
+            *ciag -= ('a' - 'A');
+        }
+        ciag++;
+    }
+}
